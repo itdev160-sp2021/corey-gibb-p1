@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    
+    <header>
+      <h1>Synth Resource</h1>
+      <h2 id="greeting"></h2>
+    </header>
+
+    <main>
+        <tr></tr>
+        <h2>Moog: Subsequent 37</h2>
+        <figure>
+            <img src="images/sub37.2.png" alt="Synthesizer">
+            <figcaption>
+                <span>Moog Subsequent 37</span>
+            </figcaption>
+        </figure>
+        <p id="product-description">
+            Moog has released the Subsequent 37: it's the same great analog synth — minus the CV. It features the same silky keybed with enhanced playability, high-powered headphone amplifier for live monitoring, and analog signal path embellishments that significantly expand your sonic palette. From behemoth basses to lashing leads to posh pads, the Subsequent 37 is a serious performers' synthesizer with the hands-on control you need to inject serious expression into your live keyboard performances.
+        </p>
+
+        <h2>Behringer: Poly D</h2>
+        <figure>
+            <img src="images/polyd.png" alt="Second Synthesizer">
+            <figcaption>
+                <span>Behringer: Poly D</span>
+            </figcaption>
+        </figure>
+        <p id="product-description">
+            Behringer has announced the Poly D, a four-voice paraphonic clone of the Minimoog, with a 37 key, velocity-sensitive keyboard. Poly D features a pure analogue signal path, based on Moog's original Model D circuit, with matched transistors.
+        </p>
+        <p>Price: $<span id="price"></span></p>
+        <p>Student Price: $<span id="sale-price"></span></p>
+
+        <table id="complex-table" border ="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Synth</th>
+                    <th scope="column">Price</th>
+                    <th scope="column">User Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Moog Sub 37</td>
+                    <td colspan="1">$1800</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Behringer Poly D</td>
+                    <td>$700</td>
+                    <td colspan="1">65%</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <td colspan="5">&copy; Gibb Synth Stats 2021</td>
+            </tfoot>
+
+
+            <h2>User Scores</h2>
+            <div class="review">
+                <h3>Jared Jabroni</h3>
+                <p>It's all about the Poly D.  This things got that low end wook that cook bro.</p>
+                <p>Moog Score: <span id="userOneMoogScore"></span></p>
+                <p>Behringer Score: <span id="userOneBScore"></span></p>
+            </div>
+            <div class="review">
+                <h3>Carl Carabroski</h3>
+                <p>Punchy leads, crystal clear square saws, and iconic basses. The subsequent 37 will blow it's competitors out of the water.</p>
+                <p>Moog Score: <span id="userTwoMoogScore"></span></p>
+                <p>Behringer Score: <span id="userTwoBScore"></span></p>
+            </div>
+            <div class="review">
+                <h3>Flutty Nutty (cat)</h3>
+                <p>I hate when my owner uses the subsequent 37.... meow.....</p>
+                <p>Moog Score: <span id="userThreeMoogScore"></span></p>
+                <p>Behringer Score: <span id="userThreeBScore"></span></p>
+            </div>
+
+    </main>
+    
+    <footer>
+        @copy 2020 Corey Gibb
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
